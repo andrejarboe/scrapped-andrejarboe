@@ -43,6 +43,7 @@ footer, footer a{
 
 .title {
     grid-area: title;
+    text-transform: uppercase;
 }
 .social {
     grid-area: social;
