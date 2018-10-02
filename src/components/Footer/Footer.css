@@ -1,0 +1,87 @@
+/* .site-map{
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.site-map li{
+    list-style-type: none;
+    text-transform: uppercase;
+} */
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+  "title . ."
+  "social site-map site-map"
+  "design . ."
+}
+
+.title,
+.social,
+.site-map,
+.design {
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+    grid-area: title;
+}
+.social {
+    grid-area: social;
+}
+
+.site-map {
+  /* display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 85%;
+  margin: 0 auto; */
+  grid-area: site-map;
+}
+
+.site-map li {
+  list-style-type: none;
+  text-transform: uppercase;
+  margin: 0 5px;
+}
+
+.design{
+    grid-area: design;
+
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  .footer-content {
+  grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+    "title"
+    "social" 
+    "site-map"
+    "design";
+  
+  }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
