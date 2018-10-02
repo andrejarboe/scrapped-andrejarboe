@@ -6,7 +6,7 @@ import "./Footer.css";
 export default class Footer extends Component {
   render() {
     return (
-      <footer className="page-footer">
+      <footer id="Footer" className="">
         <div className="container">
           <div className="footer-content row">
             <div className="title">
@@ -121,10 +121,10 @@ export default class Footer extends Component {
         </div>
         <div className="footer-copyright">
           <div className="container">
+          <p>
+
             © 2018 Andre Jarboe
-            <a className="grey-text text-lighten-4 right" href="#!">
-              More Links
-            </a>
+          </p>
           </div>
         </div>
       </footer>
